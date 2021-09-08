@@ -1,0 +1,17 @@
+.head{
+    padding: 0 10px;
+    height: 60px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 28px;
+    color: #fff;
+}
+.right{
+    display: flex;
+    align-items: center;
+}
+.btn{
+    margin-left: 10px;
+   padding: 4px 10px;
+}

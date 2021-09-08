@@ -1,0 +1,14 @@
+.side{
+    width: 100%;
+}
+.list{
+    height: 40px;
+    line-height: 40px;
+}
+.list:hover{
+    color: lightcoral;
+}
+
+.active{
+    color: lightsalmon;
+}

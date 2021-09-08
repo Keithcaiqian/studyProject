@@ -3,6 +3,8 @@ const app = express(); //创建一个express应用
 const cors = require("cors");
 const xss = require("xss");
 
+app.use('/rootPath',require("./rootMiddleware"));
+
 // const history = require("connect-history-api-fallback");
 // app.use(history()); //处理vue单页路由时路径没有的问题
 

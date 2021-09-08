@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="demo">
+        姓名{{name}},{{address.city}}<br/>
+        <div>年龄{{age}}</div>
+        <ul>
+            <li v-for="(key) in list">
+                {{key.a}}:{{key.b}}
+            </li>
+        </ul>
+    </div>
+
+    <script type="module">
+        import Kue from './core/index.js'
+        window.test = new Kue({
+            el:'demo',
+            data:{
+                name:'坤',
+                age:18,
+                address:{
+                    province:'河北',
+                    city:'唐山'
+                },
+                list:[{
+                    a:1233,
+                    b:2345435,
+                },{
+                    a:233,
+                    b:456,
+                }]
+            }
+        })
+    
+    </script>
+</body>
+</html>
